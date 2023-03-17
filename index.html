@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+  <!--CSS sheet att. below-->
+  <head>
+    <link rel="stylesheet" href="./style.css">
+      <!-- href = URL, specifies location of linked doc-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initeal-scale-=1.0">
+    <title>portfolio</title>
+ </head>
+
+<html>
+    <body>
+        <div class="hero-bg"></div>
+    <!--Beginning of NavBar Section-->
+     <header class="navigation">
+        <!--inline-block= display items horizontally -->
+        <div class="inline-block logo">
+         <img id="logo" src="Images/portfolio logo 2 final 1CSS..png">
+         <nav class="inline-block">
+            <ul class="nav_buttons">
+                <li class="nav-item">
+                    <a href="#heroImg">About</a> 
+                </li>
+                <li class="nav-item"  onClick="document.getElementById('skills-section').scrollIntoView()">
+                    <a href="#skills-section">Skills</a> 
+                </li>
+                <li class="nav-item">
+                    <a href="#mywork-section">My Work</a> 
+                </li>
+                <li class="nav-item">
+                    <a href="#contact-me">Contact Me</a>  
+                </li>
+            </ul>
+         </nav>
+        </div>
+     </header>
+    </div>
+    <!--End of NavBar Section-->
+    
+    <!--Beginning of Hero Image Section-->
+     <sec class="heroImg" id="heroImg"">
+        <!--find hero image and insert below! -->
+         <div class="content">
+             <img id="me"src="./Images/filler hero img.png">
+             <h1>Hi! I'm Danica Samuel</h1>
+             <p> I’m a UX designer based in Minneapolis, MN and I love to sing, knit, crochet, and draw. When I create, I go in with the intention of creating authentic, accessible designs that I’ll be able to enjoy years from now.</p>
+             <button href="https://docs.google.com/document/d/1vsHRoLo3DcJ9tmS5HMx33iBDmHFYGWk6CdIi3g1Vo0M/edit" download="Resume_D_Samuel-02_23">Download Resume</button>
+         </div>
+     </sec>
+    <!--End of Hero Image Section-->
+
+    <!--Beginning of Skills Section-->
+    <sec id="skills-section">
+        <div> 
+            <h1 id="skills-sectitle">Skills</h1>
+        </div>
+    <sec class="card-container">
+        <div class="skillcard" id="sc1">
+            <img src="./Images/UX design xp.png" class="skill-img">
+            <h2 class="skills-title">User Experience Design</h2>
+            <p class="skills-desc">I feel that a big part of being a UX/UI designer is being able to advocate for your user. By utilizing data from user interviews, I interate and reiterate my designs to make sure I utilize our users' feedback in a way that makes them feel heard.</p>
+        </div>
+        <div class="skillcard" id="sc2">
+            <img src="./Images/web development.png" class="skill-img">
+            <h2 class="skills-title">Web Development</h2>
+            <p class="skills-desc">With the help of my instructors and classmates, I've  been able to develop and finetune my skills in Figma, Github, VS code, and Photopea.</p>
+        </div>
+        <div class="skillcard" id="sc3">
+            <img src="./Images/team collab.png" class="skill-img">
+            <h2 class="skills-title">Team Collaboration</h2>
+            <p class="skills-desc">I love working in teams because being able to work as a unit feels fulfilling. Creating a fun, creative, and collaborative environment is important to me because not only does it pave the way for a final design we're all proud of, but I get to know my teammates better in the process.</p>
+        </div>
+        <div class="skillcard" id="sc4">
+            <img src="./Images/data synthesis.png" class="skill-img">
+            <h2 class="skills-title">Data Synthesis & Analysis</h2>
+            <p class="skills-desc">I like contextualizing given data in easy to explain terms for clients and the design team, so we can all ideate and move forward from the same place of understanding.  </p>
+        </div>
+    </sec>
+</sec>
+    <!--End of Skills Image Section-->
+
+    <!--Beginning of My Work Section-->
+    <sec id="mywork-section">
+        <div> 
+            <h1 id="mywork-title">My Work</h1>
+        </div>
+    <sec>
+        <div class="workcard" id="wc1">
+            <img src="./Images/work logo 1.png" class="work-img">
+            <h2 id="work-text-1">App Design Project</h2>
+            <p id="work-text-2">Our group designed a CSA (community-supported agriculture) donation app. Through our research we found that a lot of people wanted to help their communities more, but found it difficult to find a donation option they could trust among the overwhelming amount of options. So in our design, we focused on transparency by educating users about CSAs and showing them what would be done with their donation/s.</p>
+        </div>
+        <div class="workcard" id="wc2">
+            <img src="./Images/work logo 2.png" class="work-img">
+            <h2 id="work-text-1">Nonprofit Website Redesign</h2>
+            <p id="work-text-2">Our team remade the website for the American Choral Director Association for the Minnesota branch (desktop). We found that choral directors using the site had a hard time navigating it as it was disorganized and out of date. In the redesign, we each made our own iterations of the website and In each of our final designs we made sure to address the problems original site’s interface; mainly through improving accessibility; homogenizing graphics, limiting category sizes, etc. </p>
+        </div>
+    </sec>
+    </sec>
+    <!--End of My Work Section-->    
+   
+    <!--Beginning of Contact Section-->
+    <div class="container" id="contact-me">  
+        <form id="contact" action="" method="post">
+          <h3>Contact Me</h3>
+          <h4>Let's get to know each other :D</h4>
+          <fieldset>
+            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          </fieldset>
+          <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
+        </form>
+      </div>
+
+    <!--End of Contact Section-->
+    
+    <!--Beginning of Footer Section-->
+    <footer id="footer">
+        <ul class="foot_buttons"></ul>
+             <li class="foot-items"> 
+                <a href="#heroImg">About</a> 
+            </li>
+             <li class="foot-items"> 
+                <a href="#skills-section">Skills</a> 
+             </li>
+             <li class="foot-items">
+                <a href="#mywork-section">My Work</a> 
+            </li>
+             <li class="foot-items"> 
+                <a href="#contact-me">Contact Me</a> 
+            </li>
+        </ul>
+    </footer>
+     <!--End of Footer Section-->
+
+     <!--Beginning of scroll up button-->
+    <div class="scroll-top" id="scroll-top">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" />
+      </svg>
+    </div>
+    <script src="./index.js"></script>
+    <!--End of scroll up button-->
+
+
+    </body>
+</html>
